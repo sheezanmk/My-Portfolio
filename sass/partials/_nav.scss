@@ -101,11 +101,11 @@
       background: transparent;
       backdrop-filter: none;
 
-      gap: 1.5rem;         // reduce gap so Contact doesn’t overflow
+      gap: 1.5rem;         
       text-align: right;
 
       &-item {
-        font-size: 1.7rem;  // slightly smaller than 1.5rem to fit
+        font-size: 1.7rem; 
         transition: opacity 0.2s ease;
 
         &:hover,
