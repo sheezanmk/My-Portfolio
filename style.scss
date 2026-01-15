@@ -5,3 +5,17 @@
 @use "./sass/partials/projects";
 @use "./sass/partials/contact";
 @use "./sass/partials/footer";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+

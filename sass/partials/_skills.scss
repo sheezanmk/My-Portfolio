@@ -1,5 +1,6 @@
 @use "../mixins/media" as mq;
 .skills {
+  
   text-align: center;
   padding: 1rem 1.5rem;
   margin-top: 5rem;
@@ -14,8 +15,8 @@
   }
   &__title {
     margin: 0 0 0.5rem;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
   }
 
   &__divider {
@@ -29,7 +30,7 @@
   &__line {
     width: 80px;
     height: 2px;
-    border-bottom: 2px dotted rgb(175, 106, 115);
+    border-bottom: 2px dotted  rgb(241, 82, 103);
   }
 
   &__arrow {
@@ -38,7 +39,7 @@
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 8px solid rgb(175, 106, 115); 
+    border-top: 8px solid  rgb(241, 82, 103); 
   }
 
   &__list {
@@ -47,38 +48,47 @@
     gap: 0.8rem;
     justify-content: center;
   }
+&__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;           
+  height: 90px;          
+  border-radius: 50%;
+
+  background-color: rgb(241, 82, 103);
+  color: #fff;
+
+  font-size: 0.95rem;    
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  }
+}
+
+@include mq.desktop {
+  padding: 5rem 1.5rem;   
+
+  &__title {
+    font-size: 2.1rem;    
+  }
+
+  &__list {
+    gap: 1.4rem;          
+  }
+
   &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1.2rem;
-    width: 70px; // circle width
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    background-color: rgb(175, 106, 115);
-    font-size: 0.9rem;
-    transition: background 0.5s ease, transform 0.2s ease;
-
-    &:hover,
-    &:focus-visible {
-      background-color: rgb(175, 106, 115);
-      // color: #fff;
-      transform: translateY(-2px);
-    }
+    width: 110px;
+    height: 110px;
+    font-size: 1.05rem;
   }
-
-  @include mq.desktop {
-    .skills {
-      padding: 5rem 1.5rem;
-    }
-
-    &__title {
-      font-size: 1.9rem;
-    }
-
-    &__item {
-      font-size: 1rem;
-    }
-  }
+}
 }

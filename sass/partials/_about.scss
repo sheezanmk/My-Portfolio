@@ -8,10 +8,10 @@
   align-items: center;
   text-align: center;
 
-  padding: 3.5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 
   &__content {
-    max-width: 700px;
+    max-width: 1100px;
 
     margin: 0 auto;
   }
@@ -25,7 +25,7 @@
   }
   &__divider {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     height: 20px;
 
     display: flex;
@@ -36,7 +36,7 @@
   &__line {
     width: 80px;
     height: 2px;
-    border-bottom: 2px dotted rgb(175, 106, 115);
+    border-bottom: 2px dotted  rgb(241, 82, 103);
   }
 
   &__arrow {
@@ -45,12 +45,13 @@
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 8px solid rgb(175, 106, 115);
+    border-top: 8px solid  rgb(241, 82, 103);
   }
   &__body {
     font-size: 0.95rem;
     line-height: 1.7;
     text-align: left;
+    margin-top: 2rem;
 
     &::after {
       content: "";
@@ -59,8 +60,8 @@
     }
   }
   &__photo {
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 1rem auto;
@@ -70,27 +71,41 @@
   }
   &__text {
     text-align: center;
+    font-size: 1.08rem;
+    line-height: 1.8;
     margin: 0 0 0.75rem 0;
   }
 
   @include mq.desktop {
     padding: 5rem 1.5rem;
 
+    .about__content {
+    max-width: 1200px;   
+  }
+
+
+
     &__title {
       font-size: 1.9rem;
     }
     &__body {
-      text-align: left;
+      display: flex;
+      align-items: flex-start;
+    gap: 2.5rem;
+    
     }
 
     &__photo {
-      float: left;
+   // float: left;
+      flex-shrink: 0;
+    width: 260px;
+    height: 260px;
 
-      margin: 0 1.5rem 1rem auto;
-      shape-outside: circle();
+      // margin: 0 1.5rem 1rem auto;
+      // shape-outside: circle();
     }
     &__text {
-      text-align: left;
+       font-size: 1.1rem;
     }
   }
 }

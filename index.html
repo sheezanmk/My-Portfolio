@@ -11,24 +11,34 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="nav">
-      <a href="#hero" class="nav__logo">Sheezan</a>
-      <div class="nav__menu">
-        <a href="#about" class="nav__menu-item">About me</a>
-        <a href="#skills" class="nav__menu-item">My Skills</a>
-        <a href="#projects" class="nav__menu-item">Portfolio</a>
-        <a href="#contact" class="nav__menu-item">Contacts</a>
-      </div>
-    </nav>
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">SHEEZAN</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
+
+    <label for="nav-toggle" class="nav__toggle" aria-label="Open menu">
+      &#9776;
+    </label>
+
+    <div class="nav__menu">
+      <a href="#about" class="nav__menu-item">About</a>
+      <a href="#skills" class="nav__menu-item">Skills</a>
+      <a href="#projects" class="nav__menu-item">Projects</a>
+      <a href="#contact" class="nav__menu-item">Contact</a>
+    </div>
+  </div>
+</nav>
 
     <header class="hero" id="hero">
       <div class="hero__content">
         <h1 class="hero__text">
-          Hi there! My name is Sheezan and I'm an aspiring software developer.
+          Hi there! My name is Sheezan and I'm an aspiring technology professional with a passion for problem-solving, systems, and building reliable solutions.
         </h1>
 
         <a href="#" class="hero__button">Download the CV</a>
@@ -44,23 +54,17 @@
             <span class="about__line"></span>
           </div>
           <div class="about__body">
-          <img
-            src="sass/assets/images/sheezan.jpg"
-            alt="Sheezan photo"
-            class="about__photo"
-          />
-          <p class="about__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <p class="about__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+            <img
+              src="sass/assets/images/sheezan.jpg"
+              alt="Sheezan photo"
+              class="about__photo"
+            />
+            <p class="about__text">
+          Hi, I’m Sheezan — an aspiring software developer with a strong passion for building clean, user-focused digital experiences. I’m currently upskilling in modern web technologies, focusing on HTML, CSS, SCSS, JavaScript, and React, while also developing a solid foundation in backend concepts and full-stack development. I genuinely enjoy learning how systems work behind the scenes, not just how they look on the surface.
+
+Previously, I worked as a Digital Performance Specialist at Catchpoint, where I helped enterprise clients monitor and improve the performance of their web applications. That experience gave me a strong understanding of real-world systems, problem-solving under pressure, and working with technical teams across different regions. After taking a short career break, I’ve returned with a clear goal: to continue growing in technical roles that combine technology, problem-solving, and collaboration. This portfolio reflects my journey, my growth, and my commitment to continuously improving as a technical professional.
+            
+            </p>
           </div>
         </div>
       </section>
@@ -79,7 +83,10 @@
             <span class="skills__item">CSS</span>
             <span class="skills__item">SASS</span>
             <span class="skills__item">JavaScript</span>
+            <span class="skills__item">React</span>
+            <span class="skills__item">SQL</span>
             <span class="skills__item">Git</span>
+
           </div>
         </div>
       </section>
@@ -97,35 +104,47 @@
           <div class="projects__list">
             <div class="project__images">
               <div class="project__image">
-                <img src="sass/assets/images/placeholder.webp" alt="Project 1" />
+                <img
+                  src="sass/assets/images/Hangman.png"
+                  alt="Project 1"
+                />
               </div>
-              <h3 class="project__title">Project Title</h3>
+              <h3 class="project__title">Hangman Game</h3>
               <p class="project__text">
-                A short description about your project goes here.
+                A word-guessing game built with JavaScript, featuring game logic, user
+          input handling, and dynamic UI updates.
               </p>
-              <a href="#" class="project__button">Read more</a>
+              <a href="https://github.com/sheezanmk/Hangman-Game" class="project__button">View Project</a>
             </div>
 
             <div class="project__images">
               <div class="project__image">
-                <img src="sass/assets/images/placeholder.webp" alt="Project 2" />
+                <img
+                  src="sass/assets/images/morse-code-translator.png"
+                  alt="Project 2"
+                />
               </div>
-              <h3 class="project__title">Project Title</h3>
+              <h3 class="project__title">Morse Code Translator</h3>
               <p class="project__text">
-                A short description about your project goes here.
+                A translator that converts text to Morse code and back, using JavaScript
+          string manipulation and mapping logic.
               </p>
-              <a href="#" class="project__button">Read more</a>
+              <a href="https://github.com/sheezanmk/Morse-Code-Translator" class="project__button">View Project</a>
             </div>
 
             <div class="project__images">
               <div class="project__image">
-                <img src="sass/assets/images/placeholder.webp" alt="Project 3" />
+                <img
+                  src="sass/assets/images/google-books.png"
+                  alt="Project 3"
+                />
               </div>
-              <h3 class="project__title">Project Title</h3>
+              <h3 class="project__title">Google Books Search</h3>
               <p class="project__text">
-                A short description about your project goes here.
+                A React app that fetches results from the Google Books API and lets users
+          search, browse, and view book details.
               </p>
-              <a href="#" class="project__button">Read more</a>
+              <a href="https://github.com/sheezanmk/Google-Books-API" class="project__button">View Project</a>
             </div>
           </div>
         </div>
@@ -148,18 +167,17 @@
               </div>
               <h3 class="contact__label">E-mail</h3>
               <a href="mailto:youremail@example.com" class="contact__value">
-                youremail@example.com
+                sheezankhan09@hotmail.com
               </a>
             </div>
 
             <div class="contact__item">
               <div class="contact__icon">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-brands fa-github"></i>
               </div>
-              <h3 class="contact__label">Telephone number</h3>
-              <a href="tel:+61000000000" class="contact__value">
-                +61 00 000 000
-              </a>
+              <h3 class="contact__label">GitHub</h3>
+              <a href="https://github.com/sheezanmk" class="contact__link"
+                  ><i class="fa-brands fa-github"></i> My GitHub</a>
             </div>
 
             <div class="contact__item">
@@ -169,13 +187,11 @@
 
               <h3 class="contact__label">Social media</h3>
               <div class="contact__value">
-                <a href="#" class="contact__link">
+                <a href="https://www.linkedin.com/in/sheezanmanzoor/" class="contact__link">
                   <i class="fa-brands fa-linkedin"></i> LinkedIn</a
                 >
-                <span>·</span>
-                <a href="#" class="contact__link"
-                  ><i class="fa-brands fa-github"></i> GitHub</a
-                >
+                
+                
               </div>
             </div>
           </div>
@@ -184,9 +200,7 @@
 
       <footer class="footer">
         <div class="footer__content">
-          <p class="footer__text">
-            &copy; 2025 Sheezank. All rights reserved.
-          </p>
+          <p class="footer__text">&copy; 2025 Sheezank. All rights reserved.</p>
           <a href="#hero" class="footer__top">
             Back to top <i class="fa-solid fa-arrow-up"></i>
           </a>
