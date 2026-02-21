@@ -209,11 +209,14 @@
   float: none;
   shape-outside: none;
 }
+.about__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
 .about__text {
+  margin: 0;
   text-align: center;
-  font-size: 1.08rem;
-  line-height: 1.8;
-  margin: 0 0 0.75rem 0;
 }
 @media (min-width: 768px) {
   .about {
@@ -242,8 +245,8 @@
 
 .skills {
   text-align: center;
-  padding: 1rem 1.5rem;
-  margin-top: 5rem;
+  padding: 2.5rem 1.5rem;
+  margin-top: -30px;
 }
 .skills__container {
   display: flex;
@@ -382,6 +385,9 @@
 .projects .project__text {
   max-width: 85%;
   font-size: 0.9rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .projects .project__button {
   display: inline-block;

@@ -69,11 +69,17 @@
     float: none;
     shape-outside: none;
   }
+
+
+    &__copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem; 
+  }
+
   &__text {
-    text-align: center;
-    font-size: 1.08rem;
-    line-height: 1.8;
-    margin: 0 0 0.75rem 0;
+    margin: 0; 
+    text-align: center; 
   }
 
   @include mq.desktop {
