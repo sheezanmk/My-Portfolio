@@ -1,3 +1,5 @@
+**Description**
+
 A responsive personal portfolio website built with semantic HTML and modular SCSS to showcase my projects, technical skills, and professional background.
 
 This project serves as a central hub for my work and is designed with a mobile-first approach, clean layout structure, and reusable SCSS architecture.
