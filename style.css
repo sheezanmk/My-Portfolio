@@ -303,6 +303,9 @@
   .skills__title {
     font-size: 2.1rem;
   }
+  .skills__divider {
+    margin-bottom: 3rem;
+  }
   .skills__list {
     gap: 1.4rem;
   }
