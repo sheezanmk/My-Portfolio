@@ -55,7 +55,6 @@
     user-select: none;
   }
 
-  /* mobile menu dropdown */
   &__menu {
     display: none;
     flex-direction: column;
@@ -80,12 +79,12 @@
     }
   }
 
-  /* checkbox toggles menu */
+  
   &__checkbox:checked + &__toggle + &__menu {
     display: flex;
   }
 
-  /* ---------- DESKTOP ---------- */
+ 
   @include mq.desktop {
     &__toggle {
       display: none;

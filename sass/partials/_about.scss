@@ -36,7 +36,7 @@
   &__line {
     width: 80px;
     height: 2px;
-    border-bottom: 2px dotted  rgb(241, 82, 103);
+    border-bottom: 2px dotted rgb(241, 82, 103);
   }
 
   &__arrow {
@@ -45,7 +45,7 @@
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 8px solid  rgb(241, 82, 103);
+    border-top: 8px solid rgb(241, 82, 103);
   }
   &__body {
     font-size: 0.95rem;
@@ -70,48 +70,40 @@
     shape-outside: none;
   }
 
-
-    &__copy {
+  &__copy {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem; 
+    gap: 0.9rem;
   }
 
   &__text {
-    margin: 0; 
-    text-align: center; 
+    margin: 0;
+    text-align: center;
   }
 
   @include mq.desktop {
     padding: 5rem 1.5rem;
 
     .about__content {
-    max-width: 1200px;   
-  }
-
-
+      max-width: 1200px;
+    }
 
     &__title {
       font-size: 1.9rem;
     }
     &__body {
       display: flex;
-      align-items: flex-start;
-    gap: 2.5rem;
-    
+      align-items: center;
+      gap: 2.5rem;
     }
 
     &__photo {
-   // float: left;
       flex-shrink: 0;
-    width: 260px;
-    height: 260px;
-
-      // margin: 0 1.5rem 1rem auto;
-      // shape-outside: circle();
+      width: 260px;
+      height: 260px;
     }
     &__text {
-       font-size: 1.1rem;
+      font-size: 1.1rem;
     }
   }
 }

@@ -67,14 +67,22 @@
   }
 
   @include mq.desktop {
+    padding: 5rem 1.5rem 4.5rem;
     .contact {
       padding: 5rem 1.5rem 4.5rem;
     }
 
     &__list {
-      display: flex;
-      flex-direction: row;
-      gap: 5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+      width: min(1000px, 100%);
+      margin: 0 auto;
+      align-items: start;
+      justify-items: center;
+    }
+    &__item {
+      max-width: 260px;
     }
   }
 }
