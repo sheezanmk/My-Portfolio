@@ -2,7 +2,7 @@ A responsive personal portfolio website built with semantic HTML and modular SCS
 
 This project serves as a central hub for my work and is designed with a mobile-first approach, clean layout structure, and reusable SCSS architecture.
 
-Overview
+**Overview**
 
 The portfolio was built to:
 
@@ -14,7 +14,7 @@ Provide recruiters and hiring managers with easy access to my GitHub and LinkedI
 
 Demonstrate clean layout structure and responsive design principles
 
-Features
+**Features**
 
 Responsive layout (mobile-first)
 
@@ -32,7 +32,7 @@ Smooth scroll navigation
 
 Modular SCSS architecture using partials and mixins
 
-Tech Stack
+**Tech Stack**
 
 HTML5 (semantic structure)
 
@@ -43,6 +43,8 @@ Flexbox for layout
 Media queries for responsive design
 
 Font Awesome icons
+
+**Architecture & Approach**
 
 The project follows a modular SCSS structure:
 
@@ -56,7 +58,7 @@ Component-based section styling (About, Skills, Projects, Contact)
 
 The layout was built mobile-first and progressively enhanced for desktop screens using media queries.
 
-Setup
+**Setup**
 
 To run locally:
 
