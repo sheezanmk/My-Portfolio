@@ -87,6 +87,10 @@
 
     &__list {
       gap: 1.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 980px;
+      margin: 0 auto;
     }
 
     &__item {
